@@ -1,0 +1,175 @@
+.seminars-form {
+    width: 80%;  /* Adjust width to fit the page */
+    margin: 0 auto;  /* Center the form */
+    padding: 20px;  /* Add padding */
+    background-color: #f9f9f9;  /* Light background color */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+  }
+  
+  h2 {
+    text-align: center;  /* Center the main title */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;  /* Space between fields */
+  }
+  
+  .label {
+    display: block;  /* Block display for labels */
+    margin-bottom: 5px;  /* Space below labels */
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  textarea {
+    width: 100%;  /* Full width inputs */
+    padding: 10px;  /* Padding inside inputs */
+    border: 1px solid #ccc;  /* Light border */
+    border-radius: 4px;  /* Rounded corners */
+  }
+  
+  input[type="file"] {
+    margin-top: 5px;  /* Space above file inputs */
+  }
+  
+  textarea {
+    height: 80px;  /* Set a height for text areas */
+  }
+  
+  .form-buttons {
+    display: flex;  /* Use flexbox for buttons */
+    justify-content: space-between;  /* Space out buttons */
+  }
+  
+  button {
+    padding: 10px 20px;  /* Padding for buttons */
+    border: none;  /* No border */
+    border-radius: 4px;  /* Rounded corners */
+    background-color: #007bff;  /* Primary button color */
+    color: white;  /* White text */
+    cursor: pointer;  /* Pointer cursor on hover */
+  }
+  
+  button:hover {
+    background-color: #0056b3;  /* Darker on hover */
+  }
+  .container {
+    max-width: 1200px;
+    width: 70%;
+    padding: 20px;
+    margin-left: 400px;
+  }
+/* App.css
+
+
+
+/* Global Styles */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container Styles */
+
+  /* Header Styles */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Form Styles */
+  form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Button Styles */
+  button {
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #4cae4c;
+  }
+  
+  /* Navigation Styles */
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Summary Styles */
+  .summary {
+    background: #e7f3fe;
+    border-left: 6px solid #2196F3;
+    padding: 10px;
+    margin: 20px 0;
+  } 
+  
+  
+  /* Layout for the app */
+
+  
+  /* The sidebar stays fixed */
+  .navbar {
+    width: 229px;
+    background-color: #a81b1b;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+  
+    top: 0;
+    left: 0;
+  }
+  
+  .navbar h2 {
+    margin-bottom: 30px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin-bottom: 20px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #f0a500;
+  }
+  
+  /* Content layout */
+
+  

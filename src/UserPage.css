@@ -1,0 +1,118 @@
+/* Container for the user table */
+.container {
+    width: 70%;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+/* Ensure table layout is fixed to align header and content properly */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure table border styles do not interfere */
+    table-layout: fixed; /* Fixed layout to align headers and body */
+}
+
+/* Table header styling */
+.table-header-cell {
+    font-weight: bold;
+    background-color: #f0f0f0; /* Light gray background */
+    text-align: left;
+    padding: 16px;
+    border-bottom: 2px solid #ddd; /* Add bottom border for headers */
+    color: #333; /* Darker text for visibility */
+    box-sizing: border-box; /* Ensure padding and width are calculated consistently */
+}
+
+/* Table body cell styling */
+.table-cell {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Add bottom border for consistency */
+    color: #555; /* Gray text for better contrast */
+    box-sizing: border-box; /* Consistent box model */
+}
+
+/* Ensure the header and body cells have consistent width */
+.table-header-cell, .table-cell {
+    width: auto;
+    white-space: nowrap; /* Prevent wrapping to ensure alignment */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Handle overflow with ellipsis */
+}
+
+/* Table row hover effect */
+.table-row:hover {
+    background-color: #f9f9f9; /* Slightly darker hover effect */
+    cursor: pointer;
+}
+
+/* Button overriding Material UI styles */
+.MuiButton-root.edit-btn,
+.MuiButton-root.delete-btn,
+.MuiButton-root.add-user-btn {
+    background-color: #1976d2; /* Default blue background */
+    color: white !important; /* Ensure white text */
+    border: 1px solid #1976d2; /* Blue border */
+    padding: 5px 10px; /* Padding for buttons */
+    border-radius: 4px; /* Rounded corners */
+    text-transform: none; /* Disable uppercase */
+    cursor: pointer;
+}
+
+.MuiButton-root.delete-btn {
+    background-color: #d32f2f; /* Red background for delete */
+    border: 1px solid #d32f2f; /* Red border */
+}
+
+/* Hover effects for buttons */
+.MuiButton-root.edit-btn:hover,
+.MuiButton-root.delete-btn:hover,
+.MuiButton-root.add-user-btn:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+    opacity: 0.9; /* Slight transparency */
+}
+
+.MuiButton-root.delete-btn:hover {
+    background-color: #b71c1c; /* Darker red for delete button on hover */
+}
+
+/* Add User Button */
+.MuiButton-root.add-user-btn {
+    background-color: #1976d2; /* Blue background for add button */
+    color: white !important; /* Ensure white text */
+    padding: 8px 16px; /* Button padding */
+    border-radius: 4px; /* Rounded corners */
+    text-transform: none; /* Disable uppercase */
+}
+
+/* Action buttons (Edit and Delete) */
+.action-buttons {
+    display: flex;
+    gap: 80px; /* Spacing between buttons */
+}
+
+/* Add spacing between table cells */
+.table-container {
+    border-spacing: 30px; 
+    border-collapse: separate;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Make the container responsive for smaller screens */
+    }
+}
+
+/* Table responsiveness for smaller screens */
+@media (max-width: 600px) {
+    .table-cell, .table-header-cell {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Reduce padding for smaller screens */
+    }
+
+    .action-buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        gap: 5px; /* Smaller gap between buttons */
+    }
+}

@@ -1,0 +1,79 @@
+.tables-container {
+  margin: 20px auto; /* Center container */
+  font-family: Arial, sans-serif;
+  width: 70%; /* Keep the width */
+  margin-left: 350px;
+}
+
+h1, h2 {
+  text-align: center; /* Center headings */
+}
+
+.performance-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+  gap: 10px; /* Space between form elements */
+  margin-bottom: 20px;
+  padding: 20px; /* Increased padding */
+  border: 1px solid #ccc; /* Border around the form */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background */
+}
+
+.performance-form label {
+  display: flex;
+  justify-content: space-between; /* Space between label and input */
+}
+
+button {
+  padding: 10px 15px; /* Increased button padding */
+  margin-top: 10px;
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded button corners */
+  cursor: pointer; /* Pointer cursor for buttons */
+}
+
+button:hover {
+  opacity: 0.8; /* Slight opacity change on hover */
+}
+
+table {
+  width: 100%; /* Full width table */
+  border-collapse: collapse; /* Remove double borders */
+  margin-bottom: 20px; /* Space below table */
+}
+
+table th, table td {
+  border: 1px solid #ccc; /* Table cell border */
+  padding: 12px; /* Increased cell padding */
+  text-align: center; /* Center cell content */
+}
+
+.performance-table th {
+  background-color: #f2f2f2; /* Header background */
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping for rows */
+}
+
+.table-selector {
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center the selector */
+  margin-bottom: 20px; /* Space below selector */
+}
+
+.table-selector button {
+  margin: 0 10px; /* Spacing between buttons */
+  padding: 10px 15px; /* Button padding */
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor for buttons */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.table-selector button:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
